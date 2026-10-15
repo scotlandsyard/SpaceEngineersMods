@@ -10,7 +10,7 @@ A Space Engineers workshop mod that adds three bigger oxygen bottles and three b
 | Elite | 180 L | 1800 L | 75 kg | Assembler | Iron 400, Silicon 80, Nickel 100, Cobalt 22.5, Silver 12.5, Magnesium 2.5, Gold 5, Platinum 2 | 60 s |
 
 - The new bottles work everywhere the vanilla ones do: they refill your suit automatically, and H2/O2 generators and gas tanks fill them. That includes modded tanks that take bottles the vanilla way, through the OxygenBottles / HydrogenBottles blueprint classes.
-- The icons are the vanilla bottles with one, two or three chevrons, like the vanilla tool tiers.
+- The icons are the vanilla bottles with one, two or three chevrons in the top right, like the vanilla tool tiers: blue for oxygen, red for hydrogen. The vanilla gas symbol stays visible in the top left.
 - The bottle counts on the HUD, next to the suit's oxygen and fuel bars, include every non-empty bottle of that gas, of any tier. The vanilla counts only include the vanilla bottles.
 
 ## For server admins
@@ -58,3 +58,7 @@ Edit it while the server is stopped, or restart after editing. Clients don't nee
 - `Stage-Mod.ps1` copies the game files (`Data`, `Textures`, `thumb.jpg`) into the local Mods folder for testing and publishing. Nothing else is published: not the build output, this README, or `ORIGINAL-MOD-FINDINGS.md`.
 - Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3815194485 (unlisted). Updates are published from the local Mods folder, where the game keeps the workshop id in `modinfo.sbmi`. That file holds the publisher's Steam ID, so it isn't in this repo.
 - `ORIGINAL-MOD-FINDINGS.md`: what we found in the mod this one replaces, including the middle-mouse-button tool problem.
+
+## Changes
+
+- 2026-10-15: icons show which gas a bottle holds. The tier chevrons moved to the top right and are coloured by gas (blue oxygen, red hydrogen), so they no longer cover the vanilla gas symbol.
